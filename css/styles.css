@@ -131,28 +131,6 @@ body {
     font-size: 16px;
 }
 
-.carousel {
-    max-width: 1000px;
-    margin: 40px auto;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(255, 0, 221, 0.4);
-}
-
-.carousel-item img {
-    object-fit: cover;
-    height: 500px;
-    width: 100%;
-}
-
-.carousel-control-next-icon {
-    background-color: rgba(255, 0, 221, 0.8);
-}
-
-.carousel-indicators .active {
-    background-color: rgb(255, 0, 221);
-}
-
 .contacto {
     padding: 60px 20px;
     background-color: black;
@@ -220,4 +198,51 @@ body {
     transform: scale(1.03);
     background-color: rgb(255, 0, 221);
     color: black;
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .presentacion {
+    height: auto;
+    padding: 40px 20px;
+    background-position: center;
+  }
+
+  .presentacion p {
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  .profes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profe {
+    width: 90%;
+  }
+
+  .contacto ul li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .ritmos, .ritmos1 {
+    font-size: 22px;
+  }
+
+  .horarios, .horarios1 {
+    font-size: 16px;
+    padding: 10px;
+    max-width: 90%;
+  }
 }
